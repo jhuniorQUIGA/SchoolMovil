@@ -12,7 +12,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".actividades.registroProfesorActivity"></activity>
         <activity android:name=".actividades.SplashActivity" >
 
         <intent-filter>
