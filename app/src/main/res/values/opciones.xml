@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="grados">
+        <item>Seleccione</item>
+        <item>1ro A</item>
+        <item>1ro B</item>
+        <item>1ro C</item>
+        <item>2do A</item>
+        <item>2do B</item>
+        <item>2do C</item>
+        <item>3ro A</item>
+        <item>3ro B</item>
+        <item>3ro C</item>
+        <item>4to A</item>
+        <item>4to B</item>
+        <item>4to C</item>
+        <item>5to A</item>
+        <item>5to B</item>
+        <item>5to C</item>
+        <item>6to A</item>
+        <item>6to B</item>
+        <item>6to C</item>
+    </string-array>
+</resources>
