@@ -9,7 +9,8 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:orientation="vertical"
-    tools:context=".actividades.AdminRegisProfeActivity">
+    android:background="@drawable/bgapps"
+    tools:context=".actividades.Director.AdminRegisProfeActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,11 +21,11 @@
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Registrar Profesor"
-            android:textColor="#000000"
+            android:text="Registro de Profesores"
+            android:textColor="#ffffff"
             android:textStyle="bold"
             android:textSize="25sp"
+            android:layout_marginTop="10dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
         <TextView
             android:id="@+id/textView"
@@ -32,8 +33,10 @@
             android:layout_height="wrap_content"
             android:text="Datos Personales del Profesor"
             android:textColor="#000000"
-            android:textStyle="italic"
-            android:textSize="15sp" />
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,7 +54,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Nombres:"
+                    android:text=" Nombres:"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -61,7 +64,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Ap. Paterno:"
+                    android:text=" Ap. Paterno:"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -71,7 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Ap. Materno:"
+                    android:text=" Ap. Materno:"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -81,7 +84,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Cedula Identidad:"
+                    android:text=" Cedula Identidad:"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -91,7 +94,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Correo Electronico:"
+                    android:text=" Correo Electronico:"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -101,7 +104,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Telefono:"
+                    android:text=" Telefono:"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -111,7 +114,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="25dp"
-                    android:text="Contraseña"
+                    android:text=" Contraseña"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -123,69 +126,73 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/editText13"
+                    android:id="@+id/editNombre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:textColor="@color/colorNegro"
+                    android:inputType="textPersonName"/>
 
                 <EditText
-                    android:id="@+id/editText12"
+                    android:id="@+id/editPater"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:textColor="@color/colorNegro"
+                    android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editText11"
+                    android:id="@+id/editMater"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:textColor="@color/colorNegro"
+                    android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editText14"
+                    android:id="@+id/editCi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
+                    android:textColor="@color/colorNegro"
                     android:inputType="number" />
 
                 <EditText
-                    android:id="@+id/editText15"
+                    android:id="@+id/editCorreo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
+                    android:textColor="@color/colorNegro"
                     android:inputType="textEmailAddress" />
 
                 <EditText
-                    android:id="@+id/editText16"
+                    android:id="@+id/editTelef"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
+                    android:textColor="@color/colorNegro"
                     android:inputType="number" />
 
                 <EditText
-                    android:id="@+id/editText17"
+                    android:id="@+id/editContra"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
+                    android:textColor="@color/colorNegro"
                     android:inputType="number" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="registrar" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonAtras"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"

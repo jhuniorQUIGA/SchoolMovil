@@ -1,4 +1,4 @@
-package com.icar.demy.schoolmovil.actividades;
+package com.icar.demy.schoolmovil.actividades.Director;
 
 import androidx.appcompat.app.AppCompatActivity;
 
