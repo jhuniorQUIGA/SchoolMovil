@@ -3,7 +3,7 @@
     package="com.icar.demy.schoolmovil">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -12,9 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".actividades.AdminRegisEstudianteActivity"></activity>
-        <activity android:name=".actividades.AdminRegisProfeActivity" />
-        <activity android:name=".actividades.SplashActivity">
+        <activity android:name=".actividades.Estudiante.ActividadEstudianteActivity"></activity>
+        <activity android:name=".actividades.Profesor.ObservacionesProfesorActivity" />
+        <activity android:name=".actividades.Director.AdminRegisTutorActivity" />
+        <activity android:name=".actividades.Director.AdminRegisEstudianteActivity" />
+        <activity android:name=".actividades.Director.AdminRegisProfeActivity" />
+        <activity android:name=".actividades.Inicio.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

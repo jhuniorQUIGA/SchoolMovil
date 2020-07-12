@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,7 +11,82 @@
     android:paddingTop="16dp"
     android:orientation="vertical"
     android:background="@drawable/bgapps"
-    tools:context=".actividades.Director.AdminRegisProfeActivity">
+    tools:context=".actividades.Director.AdminRegisTutorActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registro del tutor"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Buscador de los hijos del Tutor"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="19sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="238dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/colorNegro"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buscar" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </HorizontalScrollView>
+    </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,25 +94,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Registro de Profesores"
-            android:textColor="#ffffff"
-            android:textStyle="bold"
-            android:textSize="25sp"
-            android:layout_marginTop="10dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
-        <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Datos Personales del Profesor"
+            android:text="Datos Personales del Tutor"
             android:textColor="#000000"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:layout_marginTop="50dp"/>
+            android:textStyle="italic"
+            android:textSize="15sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -54,37 +118,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text=" Nombres:"
+                    android:text="Nombre Completo:"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/textView15"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text=" Ap. Paterno:"
-                    android:textColor="#000000"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text=" Ap. Materno:"
-                    android:textColor="#000000"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView13"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text=" Cedula Identidad:"
+                    android:text="Cedula Identidad:"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -94,7 +139,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text=" Correo Electronico:"
+                    android:text="Correo Electronico:"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -104,7 +149,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text=" Telefono:"
+                    android:text="Telefono:"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -114,10 +159,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="25dp"
-                    android:text=" Contraseña"
+                    android:text="Contraseña"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -131,23 +177,9 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:textColor="@color/colorNegro"
-                    android:inputType="textPersonName"/>
-
-                <EditText
-                    android:id="@+id/editPater"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:textColor="@color/colorNegro"
                     android:inputType="textPersonName" />
 
-                <EditText
-                    android:id="@+id/editMater"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:textColor="@color/colorNegro"
-                    android:inputType="textPersonName" />
+
 
                 <EditText
                     android:id="@+id/editCi"
@@ -180,6 +212,7 @@
                     android:ems="10"
                     android:textColor="@color/colorNegro"
                     android:inputType="number" />
+
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -195,7 +228,10 @@
         android:id="@+id/buttonAtras"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
         android:layout_marginTop="5dp"
         android:text="Cancelar" />
 
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

@@ -9,31 +9,34 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:orientation="vertical"
-    tools:context=".actividades.AdminRegisEstudianteActivity">
+    android:background="@drawable/bgapps"
+    tools:context=".actividades.Director.AdminRegisEstudianteActivity">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTRO DE ESTUDIANTE"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Registrar Estudiante"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:textSize="25sp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Datos Personales del Estudiante"
+            android:text=" Datos Personales del Estudiante"
+            android:textAlignment="center"
             android:textColor="#000000"
-            android:textStyle="italic"
-            android:textSize="15sp" />
+            android:textStyle="bold"
+            android:textSize="19sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,7 +54,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Nombres:"
+                    android:text=" Nombres:"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -61,7 +64,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Ap. Paterno:"
+                    android:text=" Ap. Paterno:"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -71,7 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Ap. Materno:"
+                    android:text=" Ap. Materno:"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -81,7 +84,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Cedula Identidad:"
+                    android:text=" Cedula Identidad:"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -91,7 +94,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Nivel de Grado:"
+                    android:text=" Nivel de Grado:"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -101,7 +104,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="18dp"
-                    android:text="Correo Electronico:"
+                    android:text=" Correo Electronico:"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -111,7 +114,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Telefono:"
+                    android:text=" Telefono:"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -121,10 +124,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Contraseña"
+                    android:text=" Contraseña"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -138,7 +142,8 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:textColor="@color/colorNegro"
+                     />
 
                 <EditText
                     android:id="@+id/editText12"
@@ -146,33 +151,39 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:textColor="@color/colorNegro"
+                     />
 
                 <EditText
                     android:id="@+id/editText11"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
+                    android:textColor="@color/colorNegro"
                     android:inputType="textPersonName"
-                    android:text="Name" />
+                     />
 
                 <EditText
                     android:id="@+id/editText14"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
+                    android:textColor="@color/colorNegro"
                     android:inputType="number" />
 
                 <Spinner
                     android:id="@+id/spinner"
                     android:layout_width="match_parent"
-                    android:layout_height="35dp" />
+                    android:layout_height="35dp"
+                    android:outlineAmbientShadowColor="@color/colorBlanco"
+                    />
 
                 <EditText
                     android:id="@+id/editText15"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
+                    android:textColor="@color/colorNegro"
                     android:inputType="textEmailAddress" />
 
                 <EditText
@@ -180,6 +191,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
+                    android:textColor="@color/colorNegro"
                     android:inputType="number" />
 
                 <EditText
@@ -187,7 +199,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
+                    android:textColor="@color/colorNegro"
                     android:inputType="number" />
+
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -205,5 +219,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:text="Cancelar" />
+
 
 </LinearLayout>
