@@ -1,31 +1,33 @@
 package com.icar.demy.schoolmovil.actividades;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.os.Handler;
+import android.view.WindowManager;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.icar.demy.schoolmovil.R;
 
 public class SplashActivity extends AppCompatActivity {
-    Button siguiente;
+    private final int DURACION_SPLASH =2000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_splash);
 
-
-
-        siguiente = (Button)findViewById(R.id.button2);
-        siguiente.setOnClickListener(new View.OnClickListener() {
+        new Handler().postDelayed(new Runnable() {
             @Override
-            public void onClick(View v) {
-                Intent siguiente = new Intent(SplashActivity.this, AdminRegisEstudianteActivity.class);
-                startActivity(siguiente);
-            }
-        });
-
+            public void run() {
+                Intent intent= new Intent(SplashActivity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            };
+        }, DURACION_SPLASH);
     }
 }
+
