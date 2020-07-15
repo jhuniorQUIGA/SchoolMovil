@@ -10,7 +10,7 @@
     android:paddingTop="16dp"
     android:orientation="vertical"
     android:background="@drawable/bgapps"
-    tools:context=".ActividadEstudianteActivity">
+    tools:context=".actividades.ActividadEstudianteActivity">
 
     <TextView
         android:layout_width="match_parent"

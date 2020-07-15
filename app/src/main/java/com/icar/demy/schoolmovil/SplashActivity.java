@@ -1,4 +1,4 @@
-package com.icar.demy.schoolmovil.actividades;
+package com.icar.demy.schoolmovil;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -8,7 +8,7 @@ import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.icar.demy.schoolmovil.R;
+import com.icar.demy.schoolmovil.actividades.MainActivity;
 
 public class SplashActivity extends AppCompatActivity {
     private final int DURACION_SPLASH =2000;
@@ -23,11 +23,10 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent= new Intent(SplashActivity.this, MainActivity.class);
+                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             };
         }, DURACION_SPLASH);
     }
 }
-

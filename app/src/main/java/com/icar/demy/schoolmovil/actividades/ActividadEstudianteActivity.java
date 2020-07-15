@@ -1,8 +1,10 @@
-package com.icar.demy.schoolmovil;
+package com.icar.demy.schoolmovil.actividades;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.icar.demy.schoolmovil.R;
 
 public class ActividadEstudianteActivity extends AppCompatActivity {
 
