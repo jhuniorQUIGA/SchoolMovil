@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgapps"
-    tools:context=".MainActivity">
+    tools:context="actividades.MainActivity">
 
 
     <TextView
@@ -46,7 +46,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/botoncito1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="236dp"

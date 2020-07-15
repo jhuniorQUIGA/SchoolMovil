@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "443091472037",
+    "firebase_url": "https://schoolmovil-93e00.firebaseio.com",
+    "project_id": "schoolmovil-93e00",
+    "storage_bucket": "schoolmovil-93e00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443091472037:android:e6e1df32eb6067709a474c",
+        "android_client_info": {
+          "package_name": "com.icar.demy.schoolmovil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443091472037-ik4u79c5dmjh1ceql6btt8etnkatpa1s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.icar.demy.schoolmovil",
+            "certificate_hash": "fd131d613bb6ec17511c63b53116461a5630c3ee"
+          }
+        },
+        {
+          "client_id": "443091472037-0si7787jk1tqgj2n2bjf6b8fmhvqf5sg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.icar.demy.schoolmovil",
+            "certificate_hash": "ba4646a6d1b51cda79dad64daed6f4f6af5943ba"
+          }
+        },
+        {
+          "client_id": "443091472037-7ag5jtb0503slkqldu6h3d1gbk736npl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfKD_jyIpHE53Kj40_d84p15pYs9-Dmdk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443091472037-7ag5jtb0503slkqldu6h3d1gbk736npl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
