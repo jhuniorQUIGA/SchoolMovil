@@ -21,4 +21,12 @@
         <item>6to B</item>
         <item>6to C</item>
     </string-array>
+
+    <string-array name="registros">
+        <item>Registrar Profesor</item>
+        <item>Registrar Estudiante</item>
+        <item>Registrar Tutor</item>
+        <item>Registrar Anuncio</item>
+        <item>Crear Materia</item>
+    </string-array>
 </resources>
