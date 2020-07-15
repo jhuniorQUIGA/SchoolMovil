@@ -10,12 +10,13 @@
     android:paddingTop="16dp"
     android:orientation="vertical"
     android:background="@drawable/bgapps"
-    tools:context=".actividades.Estudiante.ActividadEstudianteActivity">
+    tools:context=".ActividadEstudianteActivity">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Observaciones Generales"
-        android:textColor="@color/colorBlanco"
-        android:textStyle="bold"
-        android:textSize="20dp"/>
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 </LinearLayout>
