@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".actividades.SplashActivity"
-    android:background="@drawable/ic_launcher_background"
+    android:background="@drawable/bgapps"
     tools:layout_editor_absoluteY="25dp" >
 
     <TextView
