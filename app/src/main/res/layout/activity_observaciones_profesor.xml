@@ -10,17 +10,16 @@
     android:paddingTop="16dp"
     android:orientation="vertical"
     android:background="@drawable/bgapps"
-    tools:context=".actividades.Profesor.ObservacionesProfesorActivity">
-
+    tools:context=".ObservacionesProfesorActivity">
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Observaciones Generales"
-        android:textColor="@color/colorBlanco"
-        android:textStyle="bold"
-        android:textSize="20dp"/>
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -38,13 +37,13 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Observaciones del estudiante:"
-            android:textStyle="bold"
-            android:textColor="#000000"
             android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:text="Observaciones del estudiante:"
             android:textAlignment="center"
+            android:textColor="#100F0F"
             android:textSize="20sp"
-            android:gravity="center_horizontal" />
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -59,14 +58,14 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:textColor="@color/colorNegro"></EditText>
+                    android:textColor="#131313"></EditText>
 
                 <TextView
                     android:id="@+id/textView5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Descripcion:"
-                    android:textColor="#000000"
+                    android:textColor="#0B0A0A"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -78,7 +77,7 @@
                     android:maxLines="10"
                     android:minLines="6"
                     android:scrollbars="vertical"
-                    android:textColor="@color/colorNegro" />
+                    android:textColor="#1B1919" />
 
             </LinearLayout>
 
@@ -137,17 +136,17 @@
             android:lines="8"
             android:maxLines="10"
             android:minLines="6"
-            android:textColor="@color/colorNegro"
-            android:scrollbars="vertical" />
+            android:scrollbars="vertical"
+            android:textColor="#1C1B1B" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Enviar notificaiones:"
+            android:textColor="#0E0D0D"
             android:textSize="18sp"
-            android:textColor="@color/colorNegro"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
