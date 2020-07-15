@@ -19,7 +19,7 @@
         <activity android:name=".actividades.AdminRegisTutorActivity" />
         <activity android:name=".actividades.AdminRegisEstudianteActivity" />
         <activity android:name=".actividades.AdminRegisProfeActivity" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".actividades.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
