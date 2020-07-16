@@ -34,16 +34,18 @@ public class activity_entrevista_profesor extends AppCompatActivity implements V
     public void onClick(View v) {
         if(v==bfecha){
             final Calendar c= Calendar.getInstance();
-            dia= c.get(Calendar.DAY_OF_MONTH);
-            mes= c.get(Calendar.MONTH);
             ano= c.get(Calendar.YEAR);
+            mes= c.get(Calendar.MONTH);
+            dia= c.get(Calendar.DAY_OF_MONTH);
+
+
 
             DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
                 @Override
                 public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                     tfecha.setText(dayOfMonth+"/"+(monthOfYear +1)+"/"+year);
                 }
-            },dia, mes, ano);
+            },ano, mes, dia);
             datePickerDialog.show();
         }if(v==bhora){
             final Calendar c= Calendar.getInstance();
