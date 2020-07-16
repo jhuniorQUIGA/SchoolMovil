@@ -2,14 +2,17 @@ package com.icar.demy.schoolmovil.actividades;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
+import com.icar.demy.schoolmovil.ObservacionesProfesorActivity;
 import com.icar.demy.schoolmovil.R;
 
 public class AdminAnunciosGenerales extends AppCompatActivity {
-
     Spinner regist;
     String[] items;
 

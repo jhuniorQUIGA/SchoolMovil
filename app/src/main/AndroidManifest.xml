@@ -12,36 +12,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProfesorActividadDelEstudianteActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".ProfesorPlanillaDeNotasActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".actividades.AdminAnunciosGenerales">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".actividades.AdminCrearMateriaActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".ActividadAcademicaEstudiante" ></activity>
+        <activity android:name=".ObservacionesProfesorActivity" />
+        <activity android:name=".actividades.AdminAnunciosGenerales"/>
+        <activity android:name=".actividades.AdminRegisTutorActivity" />
         <activity android:name=".actividades.AdminRegisEstudianteActivity" />
         <activity android:name=".actividades.AdminRegisProfeActivity" />
+        <activity android:name=".actividades.AdminCrearMateriaActivity"/>
+        <activity android:name=".ProfesorActividadDelEstudianteActivity"/>
+        <activity android:name=".ProfesorPlanillaDeNotasActivity" />
+        <activity android:name= ".activity_entrevista_profesor" />
+        <activity android:name= ".activity_seleccion_materia" />
+        <activity android:name=".actividades.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".actividades.MainActivity" />
     </application>
 
 </manifest>
