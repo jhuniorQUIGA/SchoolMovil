@@ -40,8 +40,8 @@ public class activity_entrevista_profesor extends AppCompatActivity implements V
 
             DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
                 @Override
-                public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                    tfecha.setText(dayOfMonth+"/"+(month +1)+"/"+year);
+                public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                    tfecha.setText(dayOfMonth+"/"+(monthOfYear +1)+"/"+year);
                 }
             },dia, mes, ano);
             datePickerDialog.show();
