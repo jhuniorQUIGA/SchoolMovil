@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.icar.demy.schoolmovil.ProfesorActividadDelEstudianteActivity;
 import com.icar.demy.schoolmovil.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(MainActivity.this,AdminAnunciosGenerales.class));
+                startActivity(new Intent(MainActivity.this, ProfesorActividadDelEstudianteActivity.class));
             }
         });
     }
