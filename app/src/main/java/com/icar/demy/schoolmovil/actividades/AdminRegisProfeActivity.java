@@ -2,8 +2,10 @@ package com.icar.demy.schoolmovil.actividades;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -36,6 +38,21 @@ public class AdminRegisProfeActivity extends AppCompatActivity {
         telfProf = (EditText) findViewById(R.id.telefonoProf);
         contraseñaProf = (EditText) findViewById(R.id.contraProf);
         btnRegistrar = (Button) findViewById(R.id.registrarProf);
+
+        btnRegistrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                registrarUsuario();
+            }
+        });
+
+        btnCancelar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AdminRegisProfeActivity.this,AdminAnunciosGenerales.class));
+            }
+        });
+
     }
     public void registrarUsuario() {
         String nombre = nomProf.getText().toString();
