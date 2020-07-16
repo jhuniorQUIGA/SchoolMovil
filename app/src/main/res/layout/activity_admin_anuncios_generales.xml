@@ -39,41 +39,26 @@
             <LinearLayout
                 android:layout_width="341dp"
                 android:layout_height="match_parent"
-                android:orientation="horizontal" >
+                android:orientation="horizontal"
+                android:paddingTop="40dp">
 
-                <LinearLayout
-                    android:layout_width="201dp"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:paddingLeft="20dp"
-                    android:paddingTop="30dp"
-                    android:paddingRight="20dp">
+                <Spinner
+                    android:id="@+id/registros1"
+                    android:layout_width="183dp"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:addStatesFromChildren="true"
+                    android:entries="@array/registros"
+                    android:isScrollContainer="true"
+                    android:visibility="visible" />
 
-                    <Spinner
-                        android:id="@+id/registros1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:addStatesFromChildren="true"
-                        android:isScrollContainer="true"
-                        android:visibility="visible" />
-                </LinearLayout>
+                <Button
+                    android:id="@+id/irRegistros"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="ir" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:paddingLeft="20dp"
-                    android:paddingTop="70dp"
-                    android:paddingRight="20dp">
-
-                    <Button
-                        android:id="@+id/button1"
-                        android:layout_width="118dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="ir" />
-                </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
@@ -82,8 +67,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:paddingLeft="10dp"
-            android:paddingRight="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
             android:paddingBottom="30dp">
 
             <TextView
@@ -116,7 +101,7 @@
                     android:layout_height="114dp"
                     android:orientation="vertical"
                     android:paddingLeft="10dp"
-                    android:paddingRight="10dp"/>
+                    android:paddingRight="10dp" />
 
                 <TextView
                     android:id="@+id/textView13"
@@ -128,34 +113,21 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:paddingTop="30dp">
 
-                    <LinearLayout
-                        android:layout_width="175dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:paddingTop="40dp">
+                    <Spinner
+                        android:id="@+id/spinner5"
+                        android:layout_width="213dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1" />
 
-                        <Spinner
-                            android:id="@+id/spinner5"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
-                    </LinearLayout>
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="99dp"
+                        android:layout_height="wrap_content"
+                        android:text="Enviar" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:paddingLeft="20dp"
-                        android:paddingTop="30dp"
-                        android:paddingRight="20dp">
-
-                        <Button
-                            android:id="@+id/button5"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Button" />
-                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

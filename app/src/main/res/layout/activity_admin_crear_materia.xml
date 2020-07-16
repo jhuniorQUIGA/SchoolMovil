@@ -102,7 +102,7 @@
                         android:layout_height="50dp" />
 
                     <Button
-                        android:id="@+id/button1"
+                        android:id="@+id/irRegistros"
                         android:layout_width="145dp"
                         android:layout_height="wrap_content"
                         android:gravity="center"
