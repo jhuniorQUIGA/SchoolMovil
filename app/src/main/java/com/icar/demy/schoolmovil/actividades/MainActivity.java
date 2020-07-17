@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(MainActivity.this, ProfesorActividadDelEstudianteActivity.class));
+                startActivity(new Intent(MainActivity.this, AdminAnunciosGenerales.class));
             }
         });
     }

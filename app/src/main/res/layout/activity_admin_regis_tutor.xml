@@ -75,19 +75,19 @@
         </LinearLayout>
     </LinearLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="100dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="83dp">
 
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-            <TableLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"/>
-        </HorizontalScrollView>
-    </ScrollView>
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </HorizontalScrollView>
+            </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"

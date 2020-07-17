@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.icar.demy.schoolmovil.R;
-import com.icar.demy.schoolmovil.Usuarios;
+import com.icar.demy.schoolmovil.Registros.Usuarios;
 
 public class AdminRegisProfeActivity extends AppCompatActivity {
 
@@ -62,15 +62,26 @@ public class AdminRegisProfeActivity extends AppCompatActivity {
         String correoelectronico = emialProf.getText().toString();
         String telefono = telfProf.getText().toString();
         String contraseña = contraseñaProf.getText().toString();
-
-        if (!TextUtils.isEmpty(nombre)) {
+        if (TextUtils.isEmpty(nombre)) {
+            Toast.makeText(this, "Debe llenar los campos", Toast.LENGTH_LONG).show();
+        } else if (TextUtils.isEmpty(apellido)){
+            Toast.makeText(this, "Debe llenar los campos", Toast.LENGTH_LONG).show();
+        }else if(TextUtils.isEmpty(apellidomaterno)){
+            Toast.makeText(this, "Debe llenar los campos", Toast.LENGTH_LONG).show();
+        }else if (TextUtils.isEmpty(cedulaId)){
+            Toast.makeText(this, "Debe llenar los campos", Toast.LENGTH_LONG).show();
+        }else if (TextUtils.isEmpty(correoelectronico)){
+            Toast.makeText(this, "Debe llenar los campos", Toast.LENGTH_LONG).show();
+        }else if (TextUtils.isEmpty(telefono)){
+            Toast.makeText(this, "Debe llenar los campos", Toast.LENGTH_LONG).show();
+        }else if (TextUtils.isEmpty(contraseña)){
+            Toast.makeText(this, "Debe llenar los campos", Toast.LENGTH_LONG).show();
+        }else {
             String id = Usuarios.push().getKey();
             Usuarios profesor = new Usuarios(id,nombre,apellido,apellidomaterno,cedulaId,correoelectronico,telefono,contraseña);
             Usuarios.child("Profesores").child(id).setValue(profesor);
-
             Toast.makeText(this,"Registrado",Toast.LENGTH_LONG).show();
-        }else{
-            Toast.makeText(this,"Debe introducir un Nombre",Toast.LENGTH_LONG).show();
+            startActivity(new Intent(AdminRegisProfeActivity.this,AdminAnunciosGenerales.class));
         }
     }
 }

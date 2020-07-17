@@ -130,60 +130,59 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="ExtraText">
 
                 <EditText
-                    android:id="@+id/nombrePr"
+                    android:id="@+id/nombreEs"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/apellidPr"
+                    android:id="@+id/apellidEs"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/apellidMaPr"
+                    android:id="@+id/apellidMaEs"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/ciProf"
+                    android:id="@+id/ciEstu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="number" />
 
                 <Spinner
-                    android:id="@+id/spinner"
+                    android:id="@+id/cursos"
                     android:layout_width="match_parent"
-                    android:layout_height="35dp" />
+                    android:layout_height="35dp"
+                    android:entries="@array/grados" />
 
                 <EditText
-                    android:id="@+id/emailProf"
+                    android:id="@+id/emailEstu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textEmailAddress" />
 
                 <EditText
-                    android:id="@+id/telefonoProf"
+                    android:id="@+id/telefonoEstu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="number" />
 
                 <EditText
-                    android:id="@+id/contraProf"
+                    android:id="@+id/contraEstu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -193,14 +192,14 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/registrarProf"
+        android:id="@+id/registrarEstu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="registrar" />
 
     <Button
-        android:id="@+id/cancelarProf"
+        android:id="@+id/cancelarEstu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"

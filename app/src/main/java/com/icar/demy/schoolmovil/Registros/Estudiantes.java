@@ -1,20 +1,28 @@
-package com.icar.demy.schoolmovil;
+package com.icar.demy.schoolmovil.Registros;
 
-public class Usuarios {
+public class Estudiantes {
+    String usuarioid;
+    String nombre;
+    String apellidopaterno;
+    String apellidomaterno;
+    String ci;
+    String grado;
+    String email;
+    String telefono;
+    String contraseña;
 
-    String usuarioid, nombre,apellidopaterno,apellidomaterno,ci,email,telefono,contraseña;
 
-    public Usuarios(String usuarioid, String nombre, String apellidopaterno, String apellidomaterno, String ci, String email, String telefono, String contraseña) {
+    public Estudiantes(String usuarioid, String nombre, String apellidopaterno, String apellidomaterno, String ci, String grado, String email, String telefono, String contraseña) {
         this.usuarioid = usuarioid;
         this.nombre = nombre;
         this.apellidopaterno = apellidopaterno;
         this.apellidomaterno = apellidomaterno;
         this.ci = ci;
+        this.grado = grado;
         this.email = email;
         this.telefono = telefono;
         this.contraseña = contraseña;
     }
-
     public String getUsuarioid() {
         return usuarioid;
     }
@@ -33,6 +41,10 @@ public class Usuarios {
 
     public String getCi() {
         return ci;
+    }
+
+    public String getGrado() {
+        return grado;
     }
 
     public String getEmail() {
