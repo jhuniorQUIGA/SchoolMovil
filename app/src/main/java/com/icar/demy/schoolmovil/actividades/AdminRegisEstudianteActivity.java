@@ -33,6 +33,7 @@ public class AdminRegisEstudianteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_admin_regis_estudiante);
 
         Estudiantes = FirebaseDatabase.getInstance().getReference("Estudiantes");
+
         comboGrado= (Spinner) findViewById(R.id.cursos);
         nomEstu = (EditText) findViewById(R.id.nombreEs);
         apellEstu = (EditText) findViewById(R.id.apellidEs);
@@ -41,6 +42,8 @@ public class AdminRegisEstudianteActivity extends AppCompatActivity {
         emialEstu = (EditText) findViewById(R.id.emailEstu);
         telfEstu = (EditText) findViewById(R.id.telefonoEstu);
         contrasenaEstu = (EditText) findViewById(R.id.contraEstu);
+
+
         btnRegistrarEstu = (Button) findViewById(R.id.registrarEstu);
         btnCancelarEstu = (Button) findViewById(R.id.cancelarEstu);
 
@@ -82,7 +85,7 @@ public class AdminRegisEstudianteActivity extends AppCompatActivity {
         }else if (TextUtils.isEmpty(contrasena)){
             Toast.makeText(this, "Debe llenar los campos", Toast.LENGTH_LONG).show();
         }else {
-            String idEstu= Estudiantes.push().getKey();
+   String idEstu = Estudiantes.push().getKey();
             Estudiantes estudiantes = new Estudiantes(idEstu,nombre,apellido,apellidomaterno,cedulaId,grado,correoelectronico,telefono,contrasena);
             Estudiantes.child("Estudiantes").child(idEstu).setValue(estudiantes);
             Toast.makeText(this,"Registrado",Toast.LENGTH_LONG).show();
