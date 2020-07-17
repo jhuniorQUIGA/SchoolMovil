@@ -29,7 +29,7 @@ public class AdminRegisTutorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_admin_regis_tutor);
 
         Padres = FirebaseDatabase.getInstance().getReference("Padres");
-        Consulta = FirebaseDatabase.getInstance().getReference("Consulta");
+        //Consulta = FirebaseDatabase.getInstance().getReference("Consulta");
 
         nomHijoPa = (EditText) findViewById(R.id.nombreHijoPadre);
         nomPadre = (EditText) findViewById(R.id.nombrePadre);
@@ -38,8 +38,8 @@ public class AdminRegisTutorActivity extends AppCompatActivity {
         telfPadre = (EditText) findViewById(R.id.telefPadre);
         contraseñaPadre = (EditText) findViewById(R.id.contraPadre);
 
-        btnRegistrarPa = (Button) findViewById(R.id.registrarProf);
-        btnCancelarPa = (Button) findViewById(R.id.cancelarProf);
+        btnRegistrarPa = (Button) findViewById(R.id.btnRegistraPadre);
+        btnCancelarPa = (Button) findViewById(R.id.btnCancelarPadre);
 
         btnRegistrarPa.setOnClickListener(new View.OnClickListener() {
             @Override
