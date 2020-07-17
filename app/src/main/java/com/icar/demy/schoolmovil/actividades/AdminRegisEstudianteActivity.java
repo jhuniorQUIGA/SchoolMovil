@@ -20,7 +20,7 @@ import com.icar.demy.schoolmovil.Registros.Usuarios;
 
 public class AdminRegisEstudianteActivity extends AppCompatActivity {
     Spinner comboGrado;
-    EditText nomEstu,apellEstu,apellidMaEstu,ciEstu,emialEstu,telfEstu,contraseñaEstu;
+    EditText nomEstu,apellEstu,apellidMaEstu,ciEstu,emialEstu,telfEstu,contrasenaEstu;
     Button btnRegistrarEstu;
     Button btnCancelarEstu;
     private DatabaseReference Estudiantes;
@@ -36,11 +36,11 @@ public class AdminRegisEstudianteActivity extends AppCompatActivity {
         comboGrado= (Spinner) findViewById(R.id.cursos);
         nomEstu = (EditText) findViewById(R.id.nombreEs);
         apellEstu = (EditText) findViewById(R.id.apellidEs);
-        apellidMaEstu = (EditText) findViewById(R.id.apellidMaPr);
+        apellidMaEstu = (EditText) findViewById(R.id.apellidMaEs);
         ciEstu = (EditText) findViewById(R.id.ciEstu);
         emialEstu = (EditText) findViewById(R.id.emailEstu);
         telfEstu = (EditText) findViewById(R.id.telefonoEstu);
-        contraseñaEstu = (EditText) findViewById(R.id.contraEstu);
+        contrasenaEstu = (EditText) findViewById(R.id.contraEstu);
         btnRegistrarEstu = (Button) findViewById(R.id.registrarEstu);
         btnCancelarEstu = (Button) findViewById(R.id.cancelarEstu);
 
@@ -66,7 +66,7 @@ public class AdminRegisEstudianteActivity extends AppCompatActivity {
         String grado = comboGrado.getSelectedItem().toString();
         String correoelectronico = emialEstu.getText().toString();
         String telefono = telfEstu.getText().toString();
-        String contraseña = contraseñaEstu.getText().toString();
+        String contrasena = contrasenaEstu.getText().toString();
         if (TextUtils.isEmpty(nombre)) {
             Toast.makeText(this, "Debe llenar los campos", Toast.LENGTH_LONG).show();
         } else if (TextUtils.isEmpty(apellido)){
@@ -79,12 +79,12 @@ public class AdminRegisEstudianteActivity extends AppCompatActivity {
             Toast.makeText(this, "Debe llenar los campos", Toast.LENGTH_LONG).show();
         }else if (TextUtils.isEmpty(telefono)){
             Toast.makeText(this, "Debe llenar los campos", Toast.LENGTH_LONG).show();
-        }else if (TextUtils.isEmpty(contraseña)){
+        }else if (TextUtils.isEmpty(contrasena)){
             Toast.makeText(this, "Debe llenar los campos", Toast.LENGTH_LONG).show();
         }else {
-            String id = Estudiantes.push().getKey();
-            Estudiantes estudiantes = new Estudiantes(id,nombre,apellido,apellidomaterno,cedulaId,grado,correoelectronico,telefono,contraseña);
-            Estudiantes.child("Estudiantes").child(id).setValue(estudiantes);
+            String idEstu= Estudiantes.push().getKey();
+            Estudiantes estudiantes = new Estudiantes(idEstu,nombre,apellido,apellidomaterno,cedulaId,grado,correoelectronico,telefono,contrasena);
+            Estudiantes.child("Estudiantes").child(idEstu).setValue(estudiantes);
             Toast.makeText(this,"Registrado",Toast.LENGTH_LONG).show();
             startActivity(new Intent(AdminRegisEstudianteActivity.this,AdminAnunciosGenerales.class));
         }
