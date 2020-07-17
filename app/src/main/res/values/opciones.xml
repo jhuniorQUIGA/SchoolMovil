@@ -30,7 +30,12 @@
     </string-array>
 
     <string-array name="Personal">
-        <item>Profesores</item>
-        <item>Estudiantes</item>
+    <item>Profesores</item>
+    <item>Estudiantes</item>
+    </string-array>
+
+    <string-array name="trabajos">
+        <item>Practicas</item>
+        <item>Examenes</item>
     </string-array>
 </resources>
