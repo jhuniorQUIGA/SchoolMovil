@@ -9,7 +9,6 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:orientation="vertical"
-    android:background="@drawable/bgapps"
     tools:context=".ObservacionesProfesorActivity">
 
 
