@@ -9,6 +9,7 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:orientation="vertical"
+    android:background="@drawable/bgapps"
     tools:context=".actividades.AdminRegisEstudianteActivity">
 
     <LinearLayout
@@ -23,7 +24,7 @@
             android:gravity="center"
             android:text="Registrar Estudiante"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textColor="#000000"
+            android:textColor="#F8F0F0"
             android:textSize="25sp"
             android:textStyle="bold" />
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bgapps"
     tools:context=".ProfesorPlanillaDeNotasActivity">
 
     <LinearLayout
@@ -24,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="33dp"
             android:text="Informacion de Trabajo"
-            android:textColor="#000000"
+            android:textColor="#FAF7F7"
             android:textSize="14sp"
             android:textStyle="bold" />
 
@@ -34,7 +35,7 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="178dp"
+                android:layout_width="139dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:paddingLeft="10dp"
@@ -72,11 +73,6 @@
                     android:text="Desripción"
                     android:textColor="#000000" />
 
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="105dp"
-                    android:layout_height="wrap_content"
-                    android:text="Buscar" />
             </LinearLayout>
 
             <LinearLayout
@@ -85,12 +81,13 @@
                 android:orientation="vertical">
 
                 <Spinner
-                    android:id="@+id/spinner3"
+                    android:id="@+id/tipoTrabajo"
                     android:layout_width="match_parent"
-                    android:layout_height="34dp" />
+                    android:layout_height="34dp"
+                    android:entries="@array/trabajos"/>
 
                 <EditText
-                    android:id="@+id/editText2"
+                    android:id="@+id/nomEstuTrabajo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -98,14 +95,14 @@
                     android:text="Name" />
 
                 <EditText
-                    android:id="@+id/editText3"
+                    android:id="@+id/notaEstuTrabajo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="number" />
 
                 <EditText
-                    android:id="@+id/editText4"
+                    android:id="@+id/descTrabajo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -113,7 +110,7 @@
                     android:inputType="textMultiLine" />
 
                 <Button
-                    android:id="@+id/button6"
+                    android:id="@+id/btnSubirTrabajo"
                     android:layout_width="109dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
