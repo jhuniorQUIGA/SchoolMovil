@@ -12,7 +12,7 @@
     tools:context=".actividades.AdminRegisEstudianteActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="381dp"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
@@ -22,18 +22,19 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Registrar Estudiante"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="#000000"
-            android:textStyle="bold"
             android:textSize="25sp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Datos Personales del Estudiante"
             android:textColor="#000000"
-            android:textStyle="italic"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:textStyle="italic" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -193,15 +194,15 @@
 
     <Button
         android:id="@+id/registrarEstu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="378dp"
+        android:layout_height="38dp"
         android:layout_marginTop="15dp"
         android:text="registrar" />
 
     <Button
         android:id="@+id/cancelarEstu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="379dp"
+        android:layout_height="36dp"
         android:layout_marginTop="5dp"
         android:text="Cancelar" />
 

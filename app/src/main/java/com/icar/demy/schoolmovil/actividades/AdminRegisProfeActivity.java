@@ -29,6 +29,7 @@ public class AdminRegisProfeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_admin_regis_profe);
 
         Usuarios = FirebaseDatabase.getInstance().getReference("Usuarios");
+
         btnCancelar = (Button) findViewById(R.id.cancelarProf);
         nomProf = (EditText) findViewById(R.id.nombrePr);
         apellProf = (EditText) findViewById(R.id.apellidPr);

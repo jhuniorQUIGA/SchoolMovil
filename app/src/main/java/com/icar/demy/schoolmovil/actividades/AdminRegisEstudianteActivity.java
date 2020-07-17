@@ -33,14 +33,16 @@ public class AdminRegisEstudianteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_admin_regis_estudiante);
 
         Estudiantes = FirebaseDatabase.getInstance().getReference("Estudiantes");
+
         comboGrado= (Spinner) findViewById(R.id.cursos);
         nomEstu = (EditText) findViewById(R.id.nombreEs);
         apellEstu = (EditText) findViewById(R.id.apellidEs);
-        apellidMaEstu = (EditText) findViewById(R.id.apellidMaPr);
+        apellidMaEstu = (EditText) findViewById(R.id.apellidMaEs);
         ciEstu = (EditText) findViewById(R.id.ciEstu);
         emialEstu = (EditText) findViewById(R.id.emailEstu);
         telfEstu = (EditText) findViewById(R.id.telefonoEstu);
         contraseñaEstu = (EditText) findViewById(R.id.contraEstu);
+
         btnRegistrarEstu = (Button) findViewById(R.id.registrarEstu);
         btnCancelarEstu = (Button) findViewById(R.id.cancelarEstu);
 
@@ -82,9 +84,9 @@ public class AdminRegisEstudianteActivity extends AppCompatActivity {
         }else if (TextUtils.isEmpty(contraseña)){
             Toast.makeText(this, "Debe llenar los campos", Toast.LENGTH_LONG).show();
         }else {
-            String id = Estudiantes.push().getKey();
-            Estudiantes estudiantes = new Estudiantes(id,nombre,apellido,apellidomaterno,cedulaId,grado,correoelectronico,telefono,contraseña);
-            Estudiantes.child("Estudiantes").child(id).setValue(estudiantes);
+            String idEstu = Estudiantes.push().getKey();
+            Estudiantes estudiantes = new Estudiantes(idEstu,nombre,apellido,apellidomaterno,cedulaId,grado,correoelectronico,telefono,contraseña);
+            Estudiantes.child("Estudiantes").child(idEstu).setValue(estudiantes);
             Toast.makeText(this,"Registrado",Toast.LENGTH_LONG).show();
             startActivity(new Intent(AdminRegisEstudianteActivity.this,AdminAnunciosGenerales.class));
         }
