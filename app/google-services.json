@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "443091472037-ik4u79c5dmjh1ceql6btt8etnkatpa1s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.icar.demy.schoolmovil",
+            "certificate_hash": "fd131d613bb6ec17511c63b53116461a5630c3ee"
+          }
+        },
+        {
+          "client_id": "443091472037-0si7787jk1tqgj2n2bjf6b8fmhvqf5sg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.icar.demy.schoolmovil",
+            "certificate_hash": "ba4646a6d1b51cda79dad64daed6f4f6af5943ba"
+          }
+        },
+        {
           "client_id": "443091472037-7ag5jtb0503slkqldu6h3d1gbk736npl.apps.googleusercontent.com",
           "client_type": 3
         }
