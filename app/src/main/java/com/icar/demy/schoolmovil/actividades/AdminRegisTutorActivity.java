@@ -84,6 +84,5 @@ public class AdminRegisTutorActivity extends AppCompatActivity {
             Toast.makeText(this,"Registrado",Toast.LENGTH_LONG).show();
             startActivity(new Intent(AdminRegisTutorActivity.this,AdminAnunciosGenerales.class));
         }
-
     }
 }
