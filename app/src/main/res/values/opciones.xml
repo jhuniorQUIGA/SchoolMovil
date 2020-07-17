@@ -34,8 +34,14 @@
     <item>Estudiantes</item>
     </string-array>
 
-    <string-array name="trabajos">
+    <string-array name="Trabajos">
         <item>Practicas</item>
         <item>Examenes</item>
     </string-array>
+
+    <string-array name="Notificaciones">
+        <item>Estudiantes</item>
+        <item>Padres</item>
+    </string-array>
+
 </resources>
