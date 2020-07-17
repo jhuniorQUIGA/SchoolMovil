@@ -21,8 +21,8 @@ import com.icar.demy.schoolmovil.Registros.Usuarios;
 public class AdminRegisEstudianteActivity extends AppCompatActivity {
     Spinner comboGrado;
     EditText nomEstu,apellEstu,apellidMaEstu,ciEstu,emialEstu,telfEstu,contraseñaEstu;
-    Button btnRegistrar;
-    Button btnCancelar;
+    Button btnRegistrarEstu;
+    Button btnCancelarEstu;
     private DatabaseReference Estudiantes;
 // ...
 
@@ -41,17 +41,17 @@ public class AdminRegisEstudianteActivity extends AppCompatActivity {
         emialEstu = (EditText) findViewById(R.id.emailEstu);
         telfEstu = (EditText) findViewById(R.id.telefonoEstu);
         contraseñaEstu = (EditText) findViewById(R.id.contraEstu);
-        btnRegistrar = (Button) findViewById(R.id.registrarEstu);
-        btnCancelar = (Button) findViewById(R.id.cancelarEstu);
+        btnRegistrarEstu = (Button) findViewById(R.id.registrarEstu);
+        btnCancelarEstu = (Button) findViewById(R.id.cancelarEstu);
 
-        btnRegistrar.setOnClickListener(new View.OnClickListener() {
+        btnRegistrarEstu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 registrarEstudiante();
             }
         });
 
-        btnCancelar.setOnClickListener(new View.OnClickListener() {
+        btnCancelarEstu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(AdminRegisEstudianteActivity.this,AdminAnunciosGenerales.class));
@@ -84,7 +84,7 @@ public class AdminRegisEstudianteActivity extends AppCompatActivity {
         }else {
             String id = Estudiantes.push().getKey();
             Estudiantes estudiantes = new Estudiantes(id,nombre,apellido,apellidomaterno,cedulaId,grado,correoelectronico,telefono,contraseña);
-            Estudiantes.child(id).setValue(estudiantes);
+            Estudiantes.child("Estudiantes").child(id).setValue(estudiantes);
             Toast.makeText(this,"Registrado",Toast.LENGTH_LONG).show();
             startActivity(new Intent(AdminRegisEstudianteActivity.this,AdminAnunciosGenerales.class));
         }
